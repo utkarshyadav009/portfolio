@@ -4,6 +4,7 @@ import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -12,6 +13,8 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+      var youtube = this.props.data.youtube;
+
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -28,13 +31,31 @@ class ProjectDetailsModal extends Component {
             </li>
           );
         });
+
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
             return <div key={i} data-src={elem} />;
           });
         }
+
+        if (youtube) {
+          img.unshift(
+            <div key="video-container" className="video-container">
+              <iframe
+                width="100%"
+                height="100%"
+                src={youtube}
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="Embedded YouTube Video"
+              ></iframe>
+            </div>
+          );
+        }
       }
     }
+
     return (
       <Modal
         {...this.props}

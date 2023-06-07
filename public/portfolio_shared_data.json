@@ -1,68 +1,128 @@
 {
-    "basic_info": {
-      "name": "Davina Griss",
-      "titles": [ "Front-end Developer", "Senior Data Engineer", "Dev Team lead", "Mobile App Developer" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
-        }
-      ],
-      "image": "myProfile.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Sass",
-          "class": "devicon-sass-original",
-          "level": "75"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        },
-        {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
-          "level": "60"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Utkarsh Yadav",
+    "titles": [ "Artificial Intelligence", "Unreal Engine 5", "Augumented Reality", "DirectX Shaders", "OpenGL", "SFML" ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/utkarshyadav009",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/yishu_utkarsh/",
+        "class": "fab fa-instagram"
+      },
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/channel/UCix8sxMXL_Bd5FV69zlN6Ug",
+        "class": "fab fa-youtube"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "C++",
+        "class": "devicon-cplusplus-plain",
+        "level": "95"
+      },
+      {
+        "name": "Java",
+        "class": "devicon-java-plain",
+        "level": "70"
+      },
+      {
+        "name": "Unreal Engine",
+        "class": "devicon-unrealengine-original",
+        "level": "95"
+      },
+      {
+        "name": "Open GL",
+        "class": "devicon-opengl-plain",
+        "level": "80"
+      },
+      {
+        "name": "Unity",
+        "class": "devicon-unity-original",
+        "level": "90"
+      },
+      {
+        "name": "VS Code",
+        "class": "devicon-vscode-plain",
+        "level": "70"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "75"
+      },
+      {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain",
+        "level": "70"
+      },
+      {
+        "name": "React",
+        "class": "devicon-react-original",
+        "level": "70"
+      },
+      {
+        "name": "TensorFlow",
+        "class": "devicon-tensorflow-original",
+        "level": "70"
+      },
+      {
+        "name": "OpenCV",
+        "class": "devicon-opencv-plain",
+        "level": "75"
+      },
+      {
+        "name": "PyTorch",
+        "class": "devicon-pytorch-plain",
+        "level": "70"
+      },
+      {
+        "name": "C#",
+        "class": "devicon-csharp-plain",
+        "level": "75"
+      },
+      {
+        "name": "Python",
+        "class": "devicon-python-plain",
+        "level": "85"
+      },
+      {
+        "name": "Github",
+        "class": "devicon-github-plain",
+        "level": "65"
+      },
+      {
+        "name": "Visual Studio",
+        "class": "devicon-visualstudio-plain",
+        "level": "60"
+      },
+      {
+        "name": "Gimp",
+        "class": "devicon-gimp-plain",
+        "level": "50"
+      },
+      {
+        "name": "Blender",
+        "class": "devicon-blender-original",
+        "level": "60"
+      },
+      {
+        "name": "Arduino",
+        "class": "devicon-arduino-plain",
+        "level": "60"
+      },
+      {
+        "name": "Android Studio",
+        "class": "devicon-androidstudio-plain",
+        "level": "60"
+      }
+    ]
   }
+}

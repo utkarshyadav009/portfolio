@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Greetings",
+      "description": "🙏 Welcome to my portfolio.   As a soon-to-be graduate deeply passionate about game development and AI, I'm thrilled to present my skills, experience, and projects to you. My academic journey has been an exciting time of honing my technical acumen and fostering a creative vision through rigorous coursework, independent projects, and collaborative efforts with peers. I bring advanced expertise in Unreal Engine, backed by numerous innovative projects. A noteworthy instance would be a project using Phase-Functioned Neural Networks (PFNN) for controlling animations and character movements. I also have a flair for procedural animation in Unreal Engine, demonstrating my ability to create intricate, dynamic elements within games. While my understanding of Unity and Godot is also substantial, my proficiency lies primarily with Unreal Engine. In the realm of AI, I've delved into recent advancements, including transformative technologies like ChatGPT and Stable Diffusion for image generation. To witness the power of AI in enhancing image aesthetics, I encourage you to visit my Instagram via the social links at the bottom of this page. My technical repertoire extends to multithreading, data structures and algorithms, tools programming, AR/VR in games, DirectX shaders, OpenGL, and SFML. This broad yet profound knowledge base, coupled with my enthusiasm and dedication, positions me as a robust candidate for your company. I am thrilled at the prospect of furthering my learning and growth in this rapidly evolving field. I trust that my portfolio will provide you with a glimpse into my potential as a programmer. Thank you for your time and consideration in reviewing my work.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -18,6 +18,7 @@
           "images/portfolio/animal-shelter/p1.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
         ],
+        "youtube": "https://www.youtube.com/embed/8fWwnc0_WPo",
         "url": "",
         "technologies": [
           {
