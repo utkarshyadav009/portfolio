@@ -49,6 +49,11 @@
         "level": "90"
       },
       {
+        "name": "Godot",
+        "class": "devicon-godot-plain",
+        "level": "75"
+      },
+      {
         "name": "VS Code",
         "class": "devicon-vscode-plain",
         "level": "70"
@@ -91,6 +96,11 @@
       {
         "name": "Python",
         "class": "devicon-python-plain",
+        "level": "85"
+      },
+      {
+        "name": "Jupyter Notebook",
+        "class": "devicon-jupyter-plain",
         "level": "85"
       },
       {

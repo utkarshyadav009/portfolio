@@ -36,6 +36,26 @@
         ]
       },
       {
+        "title": "Unreal AR Pong Game",
+        "startDate": "September 2022 - January 2023",
+        "description": "BeerPog Champ is an AR-based game inspired by Beer-Pong. Using motion sensor data, players throw virtual ping-pong balls into cups on a virtual table. The game features a simple menu system and aims to provide fun gameplay.",
+        "images": [
+          "images/portfolio/Unreal-AR/1.jpg",
+          "images/portfolio/Unreal-AR/2.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/_V6gROz8Lo4",
+        "technologies": [
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
         "title": "Gek-Go",
         "startDate": "September 2021 - May 2022",
         "description": "A DES310 group project, mentored by Rockstar. I worked as the engine and tools programmer for this project, developing the initial traversal mechanic for the beta build. After that I went on to work on the water shader, skybox, butterfly particle effects, animations in unreal engine, and inverse kinematics.",
@@ -63,32 +83,9 @@
         ]
       },
       {
-        "title": "DirectX Shaders",
-        "startDate": "September 2021 - January 2022",
-        "description": "A CMP301 project, uses D3D11 Shaders to render a scene from the cult anime Neon-Genesis Evangelion. Gerstner Wave Equation is used for water simulations. Bloom is applied to both the light sources in the scene including the water.",
-        "images": [
-          "images/portfolio/DirectX-Shaders/NGE.jpg",
-          "images/portfolio/DirectX-Shaders/1.jpg",
-          "images/portfolio/DirectX-Shaders/2.jpg",
-          "images/portfolio/DirectX-Shaders/3.jpg"
-        ],
-        "youtube": "https://www.youtube.com/embed/8fWwnc0_WPo",
-        "url":"https://github.com/utkarshyadav009/DirectXShaders-CMP301-Coursework",
-        "technologies": [
-          {
-            "class": "devicon-cplusplus-plain",
-            "name": "C++"
-          },
-          {
-            "class": "devicon-opengl-plain",
-            "name": "D3D11"
-          }
-        ]
-      },
-      {
-        "title": "Handwritten Digit-Recognition",
+        "title": "AI Handwritten Digit-Recognition",
         "startDate": "January 2022 - March 2022",
-        "description": "Handwritten digit recognition using feed forward neural network and softmax actiavtion function, It is a shallow neural network with no hidden layers. SFML library is used for GUI. The number 6 and 9 do not get recogenised properly in this version, maybe due to the limited training data provided and lack of hidden layers",
+        "description": "Handwritten digit recognition using the MNIST dataset is based ona feed forward neural network architecture and uses a softmax actiavtion function, It is a shallow neural network with no hidden layers. SFML library is used for GUI. The number 6 and 9 do not get recogenised properly in this version, maybe due to the limited training data provided and lack of hidden layers",
         "images": [
           "images/portfolio/handwritten-digit-recoginition/1.jpg",
           "images/portfolio/handwritten-digit-recoginition/2.jpg",
@@ -109,6 +106,30 @@
           {
             "class": "devicon-opengl-plain",
             "name": "SFML"
+          }
+        ]
+      },
+      {
+        "title": "AI Image-Classifier",
+        "startDate": "March 2022 - May 2022",
+        "description": "The project is an image classifier developed using Jupyter Notebook and Python. It utilizes a convolutional neural network trained on the CIFAR-10 dataset. Google Colab is used for dataset loading and model training, while the Keras API enables quick definition of deep learning models. Tkinter graphics library provides a graphical user interface for custom image inputs.",
+        "images": [
+          "images/portfolio/Image-Classifier/2.jpg",
+          "images/portfolio/Image-Classifier/1.jpg",
+          "images/portfolio/Image-Classifier/3.jpg",
+          "images/portfolio/Image-Classifier/4.jpg",
+          "images/portfolio/Image-Classifier/5.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/c9A7-P9fl-c",
+        "url":"https://github.com/utkarshyadav009/CMP304-Image-Classifier",
+        "technologies": [
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-jupyter-plain",
+            "name": "Jupyter Notebook"
           }
         ]
       },
@@ -138,6 +159,29 @@
         ]
       },
       {
+        "title": "DirectX Shaders",
+        "startDate": "September 2021 - January 2022",
+        "description": "A CMP301 project, uses D3D11 Shaders to render a scene from the cult anime Neon-Genesis Evangelion. Gerstner Wave Equation is used for water simulations. Bloom is applied to both the light sources in the scene including the water.",
+        "images": [
+          "images/portfolio/DirectX-Shaders/NGE.jpg",
+          "images/portfolio/DirectX-Shaders/1.jpg",
+          "images/portfolio/DirectX-Shaders/2.jpg",
+          "images/portfolio/DirectX-Shaders/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/8fWwnc0_WPo",
+        "url":"https://github.com/utkarshyadav009/DirectXShaders-CMP301-Coursework",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-opengl-plain",
+            "name": "D3D11"
+          }
+        ]
+      },
+      {
         "title": "OpenGL Graveyard Scene",
         "startDate": "September 2020 - January 2021",
         "description": "Graveyard Scene is an OpenGL project that immerses you in a hauntingly beautiful graveyard setting. It features a spooky tree, eerie tombstones, and a captivating cottage at the scene's center. The project demonstrates various techniques such as reflection, lighting, and procedural cylinder generation for a well. Additionally, it incorporates object loading and showcases a dynamic day and night cycle, adding depth and realism to the atmospheric experience.",
@@ -163,6 +207,30 @@
         ]
       },
       {
+        "title": "Carbon Rapture",
+        "startDate": "June 2021 - June 2021",
+        "description": "Carbon Rapture is a game jam entry for the ASGJam focused on carbon capture for climate action. It offers an engaging and educational experience, teaching players about the process of carbon capturing through  interactive gameplay and intuitive mechanics, , promoting awareness and knowledge about this important environmental process.",
+        "images": [
+          "images/portfolio/Carbon-Rapture/1.jpg",
+          "images/portfolio/Carbon-Rapture/2.jpg",
+          "images/portfolio/Carbon-Rapture/3.jpg",
+          "images/portfolio/Carbon-Rapture/4.jpg",
+          "images/portfolio/Carbon-Rapture/5.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/7fI8RbvLNto",
+        "url":"https://snarmph.itch.io/carbon-rapture",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-godot-plain",
+            "name": "Godot"
+          }
+        ]
+      },
+      {
         "title": "Loopy Trajectory",
         "startDate": "October 2019 - October 2019",
         "description": "Loopy Trajectory is a thrilling game jam creation, with the theme of revolution in mind, it is reminiscent of the sensation 'Getting Over It.' Developed in Unity, the game follows the captivating story of Bob, a stranded spaceship pilot trapped in interstellar space. Players embark on an epic journey, maneuvering through challenging levels by utilizing wormholes to reach home. With an engaging storyline and narrative crafted by me, the game immerses players in Bob's extraordinary quest. The evocative audio design, featuring a narrator delivering memorable quotes like 'Don't hate the player, hate the game,' adds an extra layer of depth to this gripping experience.",
@@ -184,6 +252,7 @@
           }
         ]
       }
+
     ],
     "experience": [
       {
