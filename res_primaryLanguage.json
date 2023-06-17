@@ -1,0 +1,390 @@
+{
+    "basic_info": {
+      "description_header": "Greetings",
+      "description": "🙏 ",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "AI Animation in Unreal Engine",
+        "startDate": "September 2022 - May 2023",
+        "description": "The project implements Phase-Functioned Neural Network (PFNN) by Daniel Holden (2017) within Unreal Engine to manage complex character animations. The project creates a custom plugin to access third party libraries used in the orignal paper and to stream line the process of recreating the paper in Unreal Engine. Despite advancements in loading network weights asynchronously and calculating trajectories, two primary challenges persist. First, character mesh often undergoes deformation, significantly impacting the visual quality of animations. Second, trajectory calculation inaccuracies lead to inconsistencies in movement predictions. These core issues currently compromise the efficacy of the system, and addressing them forms the crux of ongoing and future development efforts.",
+        "images": [
+          "images/portfolio/PFNN-Unreal-Engine/1.jpg",
+          "images/portfolio/PFNN-Unreal-Engine/2.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/dO3I4DsRHRI",
+        "url":"https://github.com/utkarshyadav009/Phase-Functioned-Neural-Network-UE5",
+        "technologies": [
+          {
+            "class": "devicon-maya-plain",
+            "name": "Maya"
+          },
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class":"devicon-blender-original",
+            "name":"Blender"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
+        "title": "Procedural Animation in Unreal Engine",
+        "startDate": "September 2022 - January 2023",
+        "description": "The project showcases a procedural animation system developed in Unreal Engine, utilizing the Control Rig system and Full Body IK node. The control rig was created with bone controllers for manipulating the gecko's feet based on external data. Feet position was calculated using line traces, allowing the gecko to step in an arc onto new positions. The Full Body IK node calculated bone positions using inverse kinematics algorithms, resulting in realistic character animations. A post-process animation blueprint enhanced believability by layering multiple animations, incorporating physical simulations, and adjusting body parts. This blueprint seamlessly blended animations to create lifelike gecko behavior. The project leverages Unreal Engine's powerful animation tools to achieve dynamic and immersive character movements",
+        "images": [
+          "images/portfolio/Procedural-Animation-Unreal-Engine/1.jpg",
+          "images/portfolio/Procedural-Animation-Unreal-Engine/2.jpg",
+          "images/portfolio/Procedural-Animation-Unreal-Engine/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/ExgCP27vJGc",
+        "technologies": [
+          {
+            "class": "devicon-maya-plain",
+            "name": "Maya"
+          },
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
+        "title": "Unreal AR Pong Game",
+        "startDate": "September 2022 - January 2023",
+        "description": "BeerPog Champ is an AR-based game inspired by Beer-Pong. Using motion sensor data, players throw virtual ping-pong balls into cups on a virtual table. The game features a simple menu system and aims to provide fun gameplay.",
+        "images": [
+          "images/portfolio/Unreal-AR/1.jpg",
+          "images/portfolio/Unreal-AR/2.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/_V6gROz8Lo4",
+        "technologies": [
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class":"devicon-androidstudio-plain",
+            "name":"Android Studio"
+          }
+        ]
+      },
+      {
+        "title": "Gek-Go",
+        "startDate": "September 2021 - May 2022",
+        "description": "A DES310 group project, mentored by Rockstar. I worked as the engine and tools programmer for this project, developing the initial traversal mechanic for the beta build. After that I went on to work on the water shader, skybox, butterfly particle effects, animations in unreal engine, and inverse kinematics.",
+        "images": [
+          "images/portfolio/Gek-Go/GekGo.jpg",
+          "images/portfolio/Gek-Go/1.jpg",
+          "images/portfolio/Gek-Go/2.jpg",
+          "images/portfolio/Gek-Go/3.jpg",
+          "images/portfolio/Gek-Go/4.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/AFXZTwJwWyM",
+        "technologies": [
+          {
+            "class": "devicon-maya-plain",
+            "name": "Maya"
+          },
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
+        "title": "AI Handwritten Digit-Recognition",
+        "startDate": "January 2022 - March 2022",
+        "description": "Handwritten digit recognition using the MNIST dataset is based ona feed forward neural network architecture and uses a softmax actiavtion function, It is a shallow neural network with no hidden layers. SFML library is used for GUI. The number 6 and 9 do not get recogenised properly in this version, maybe due to the limited training data provided and lack of hidden layers",
+        "images": [
+          "images/portfolio/handwritten-digit-recoginition/1.jpg",
+          "images/portfolio/handwritten-digit-recoginition/2.jpg",
+          "images/portfolio/handwritten-digit-recoginition/3.jpg",
+          "images/portfolio/handwritten-digit-recoginition/4.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/QLE3xwZhBds",
+        "url": "https://github.com/utkarshyadav009/Digit-Recognition-CMP304-Project",
+        "technologies": [
+          {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-visualstudio-plain",
+            "name": "Visual Studio"
+          },
+          {
+            "class": "devicon-opengl-plain",
+            "name": "SFML"
+          }
+        ]
+      },
+      {
+        "title": "AI Image-Classifier",
+        "startDate": "March 2022 - May 2022",
+        "description": "The project is an image classifier developed using Jupyter Notebook and Python. It utilizes a convolutional neural network trained on the CIFAR-10 dataset. Google Colab is used for dataset loading and model training, while the Keras API enables quick definition of deep learning models. Tkinter graphics library provides a graphical user interface for custom image inputs.",
+        "images": [
+          "images/portfolio/Image-Classifier/2.jpg",
+          "images/portfolio/Image-Classifier/1.jpg",
+          "images/portfolio/Image-Classifier/3.jpg",
+          "images/portfolio/Image-Classifier/4.jpg",
+          "images/portfolio/Image-Classifier/5.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/c9A7-P9fl-c",
+        "url":"https://github.com/utkarshyadav009/CMP304-Image-Classifier",
+        "technologies": [
+          {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
+            "class": "devicon-python-plain",
+            "name": "Python"
+          },
+          {
+            "class": "devicon-jupyter-plain",
+            "name": "Jupyter Notebook"
+          }
+        ]
+      },
+      {
+        "title": "AI Patrol Mechanic Unreal Engine",
+        "startDate": "September 2021 - January 2022",
+        "description": "Patrol Mechanic is an Unreal Engine project showcasing AI patrol guards. Utilizing behavior trees and task nodes, the guards are programmed to protect predefined paths. They employ sight and hearing senses to detect and respond to the player's presence, initiating a chase if spotted. The project highlights the implementation of multiple AI guards to enhance security and create engaging gameplay scenarios.",
+        "images": [
+          "images/portfolio/Patrol-Mechanic-UnrealEngine/1.jpg",
+          "images/portfolio/Patrol-Mechanic-UnrealEngine/2.jpg",
+          "images/portfolio/Patrol-Mechanic-UnrealEngine/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/Y-ux4XKcIb8",
+        "technologies": [
+          {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-visualstudio-plain",
+            "name": "Visual Studio"
+          },
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          }
+        ]
+      },
+      {
+        "title": "4-Player Networking Racing Game",
+        "startDate": "January 2022 - March 2022",
+        "description": "A multiplayer game developed using SFML networking API. It features a 4-player racing experience, utilizing TCP protocol for data transfer in a hub-to-client model. Each player sends positional data to the server, which is then directed to the respective clients. The application incorporates a sophisticated quadratic prediction algorithm to improve gameplay. However, due to the choice of positional data transfer, the game experiences lag. Optimizing the transfer model by sending key presses would enable real-time updates of player positions, enhancing the gaming experience.",
+        "images": [
+          "images/portfolio/Networked-RacingGame/1.jpg",
+          "images/portfolio/Networked-RacingGame/2.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/K2iVgn2zQnU",
+        "url": "https://github.com/utkarshyadav009/cmp303-Project",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-opengl-plain",
+            "name":"SFML"
+          }
+        ]
+      },
+      {
+        "title": "Multi-threaded Mandelbrot CPU",
+        "startDate": "March 2021 - May 2021",
+        "description": "Multi-threaded Mandelbrot CPU is a project that utilizes thread pooling to efficiently generate the visually stunning Mandelbrot set. With the help of the SFML graphics library, this project provides a high-performance and visually captivating exploration of fractal mathematics.",
+        "images": [
+          "images/portfolio/Mandelbrot-Multithreaded/1.jpg",
+          "images/portfolio/Mandelbrot-Multithreaded/3.jpg",
+          "images/portfolio/Mandelbrot-Multithreaded/4.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/YwMP-n9Zjc8",
+        "url": "https://github.com/utkarshyadav009/Mandelbrot-set",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-SFML-plain",
+            "name":"SFML"
+          }
+        ]
+      },
+      {
+        "title": "Multi-threaded Anagram Finder",
+        "startDate": "September 2020 - May 2021",
+        "description": "Multi-threaded Anagram Finder is a project that efficiently finds anagrams using two data structures, unordered maps and a binary tree. By leveraging thread pooling, it optimizes the process of generating and searching through all possible permutations of a given word. With its computational ease and comprehensive dictionary, it provides a quick and reliable solution for finding anagrams.",
+        "images": [
+          "images/portfolio/Anagram-Finder-Multithreaded/1.jpg",
+          "images/portfolio/Anagram-Finder-Multithreaded/2.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/WKWD89zhhKw",
+        "url": "https://github.com/utkarshyadav009/CMP202-Anagram-Finder-2.0",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-visualstudio-plain",
+            "name":"Visual Studios"
+          }
+        ]
+      },
+      {
+        "title": "DirectX Shaders",
+        "startDate": "September 2021 - January 2022",
+        "description": "A CMP301 project, uses D3D11 Shaders to render a scene from the cult anime Neon-Genesis Evangelion. Gerstner Wave Equation is used for water simulations. Bloom is applied to both the light sources in the scene including the water.",
+        "images": [
+          "images/portfolio/DirectX-Shaders/NGE.jpg",
+          "images/portfolio/DirectX-Shaders/1.jpg",
+          "images/portfolio/DirectX-Shaders/2.jpg",
+          "images/portfolio/DirectX-Shaders/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/8fWwnc0_WPo",
+        "url":"https://github.com/utkarshyadav009/DirectXShaders-CMP301-Coursework",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-opengl-plain",
+            "name": "D3D11"
+          }
+        ]
+      },
+      {
+        "title": "OpenGL Graveyard Scene",
+        "startDate": "September 2020 - January 2021",
+        "description": "Graveyard Scene is an OpenGL project that immerses you in a hauntingly beautiful graveyard setting. It features a spooky tree, eerie tombstones, and a captivating cottage at the scene's center. The project demonstrates various techniques such as reflection, lighting, and procedural cylinder generation for a well. Additionally, it incorporates object loading and showcases a dynamic day and night cycle, adding depth and realism to the atmospheric experience.",
+        "images": [
+          "images/portfolio/OpenGL-Graveyard-Scene/1.jpg",
+          "images/portfolio/OpenGL-Graveyard-Scene/2.jpg",
+          "images/portfolio/OpenGL-Graveyard-Scene/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/Q9DvS-QiNL8",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          },
+          {
+            "class": "devicon-visualstudio-plain",
+            "name": "Visual Studio"
+          },
+          {
+            "class": "devicon-opengl-plain",
+            "name": "OpenGL"
+          }
+        ]
+      },
+      {
+        "title": "Carbon Rapture",
+        "startDate": "June 2021 - June 2021",
+        "description": "Carbon Rapture is a game jam entry for the ASGJam focused on carbon capture for climate action. It offers an engaging and educational experience, teaching players about the process of carbon capturing through  interactive gameplay and intuitive mechanics, , promoting awareness and knowledge about this important environmental process.",
+        "images": [
+          "images/portfolio/Carbon-Rapture/1.jpg",
+          "images/portfolio/Carbon-Rapture/2.jpg",
+          "images/portfolio/Carbon-Rapture/3.jpg",
+          "images/portfolio/Carbon-Rapture/4.jpg",
+          "images/portfolio/Carbon-Rapture/5.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/7fI8RbvLNto",
+        "url":"https://snarmph.itch.io/carbon-rapture",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-godot-plain",
+            "name": "Godot"
+          }
+        ]
+      },
+      {
+        "title": "Loopy Trajectory",
+        "startDate": "October 2019 - October 2019",
+        "description": "Loopy Trajectory is a thrilling game jam creation, with the theme of revolution in mind, it is reminiscent of the sensation 'Getting Over It.' Developed in Unity, the game follows the captivating story of Bob, a stranded spaceship pilot trapped in interstellar space. Players embark on an epic journey, maneuvering through challenging levels by utilizing wormholes to reach home. With an engaging storyline and narrative crafted by me, the game immerses players in Bob's extraordinary quest. The evocative audio design, featuring a narrator delivering memorable quotes like 'Don't hate the player, hate the game,' adds an extra layer of depth to this gripping experience.",
+        "images": [
+          "images/portfolio/Loopy-Trajectory/1.jpg",
+          "images/portfolio/Loopy-Trajectory/2.jpg",
+          "images/portfolio/Loopy-Trajectory/3.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/wxJP_Qw7JgY",
+        "url":"https://snarmph.itch.io/loopy-trajectory",
+        "technologies": [
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          },
+          {
+            "class": "devicon-unity-original",
+            "name": "Unity"
+          }
+        ]
+      }
+
+    ],
+    "experience": [
+      {
+          "title": "Student at Abertay",
+          "years": "2019 - 2023",
+          "mainTech": [
+          ],
+          "technologies": [
+              "Phase-Functioned Neural Networks (PFNN)",
+              "Procedural Animation",
+              "Unity",
+              "Godot",
+              "ChatGPT",
+              "Stable Diffusion",
+              "Multithreading",
+              "Data Structures and Algorithms",
+              "Tools Programming",
+              "AR/VR in Games",
+              "DirectX Shaders",
+              "OpenGL",
+              "SFML"
+          ]
+      }
+  ]
+
+  }
