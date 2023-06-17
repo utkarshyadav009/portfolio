@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "description_header": "Greetings",
-      "description": "🙏 Welcome to my portfolio.   As a soon-to-be graduate deeply passionate about game development and AI, I'm thrilled to present my skills, experience, and projects to you. My academic journey has been an exciting time of honing my technical acumen and fostering a creative vision through rigorous coursework, independent projects, and collaborative efforts with peers. I bring advanced expertise in Unreal Engine, backed by numerous innovative projects. A noteworthy instance would be a project using Phase-Functioned Neural Networks (PFNN) for controlling animations and character movements. I also have a flair for procedural animation in Unreal Engine, demonstrating my ability to create intricate, dynamic elements within games. While my understanding of Unity and Godot is also substantial, my proficiency lies primarily with Unreal Engine. In the realm of AI, I've delved into recent advancements, including transformative technologies like ChatGPT and Stable Diffusion for image generation. To witness the power of AI in enhancing image aesthetics, I encourage you to visit my Instagram via the social links at the bottom of this page. My technical repertoire extends to multithreading, data structures and algorithms, tools programming, AR/VR in games, DirectX shaders, OpenGL, and SFML. This broad yet profound knowledge base, coupled with my enthusiasm and dedication, positions me as a robust candidate for your company. I am thrilled at the prospect of furthering my learning and growth in this rapidly evolving field. I trust that my portfolio will provide you with a glimpse into my potential as a programmer. Thank you for your time and consideration in reviewing my work.",
+      "description": "🙏 ",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -10,6 +10,35 @@
       }
     },
     "projects": [
+      {
+        "title": "AI Animation in Unreal Engine",
+        "startDate": "September 2022 - May 2023",
+        "description": "The project implements Phase-Functioned Neural Network (PFNN) by Daniel Holden (2017) within Unreal Engine to manage complex character animations. The project creates a custom plugin to access third party libraries used in the orignal paper and to stream line the process of recreating the paper in Unreal Engine. Despite advancements in loading network weights asynchronously and calculating trajectories, two primary challenges persist. First, character mesh often undergoes deformation, significantly impacting the visual quality of animations. Second, trajectory calculation inaccuracies lead to inconsistencies in movement predictions. These core issues currently compromise the efficacy of the system, and addressing them forms the crux of ongoing and future development efforts.",
+        "images": [
+          "images/portfolio/PFNN-Unreal-Engine/1.jpg",
+          "images/portfolio/PFNN-Unreal-Engine/2.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/dO3I4DsRHRI",
+        "url":"https://github.com/utkarshyadav009/Phase-Functioned-Neural-Network-UE5",
+        "technologies": [
+          {
+            "class": "devicon-maya-plain",
+            "name": "Maya"
+          },
+          {
+            "class": "devicon-unrealengine-plain",
+            "name": "Unreal Engine"
+          },
+          {
+            "class":"devicon-blender-original",
+            "name":"Blender"
+          },
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
       {
         "title": "Procedural Animation in Unreal Engine",
         "startDate": "September 2022 - January 2023",
@@ -52,6 +81,10 @@
           {
             "class": "devicon-cplusplus-plain",
             "name": "C++"
+          },
+          {
+            "class":"devicon-androidstudio-plain",
+            "name":"Android Studio"
           }
         ]
       },
@@ -96,6 +129,10 @@
         "url": "https://github.com/utkarshyadav009/Digit-Recognition-CMP304-Project",
         "technologies": [
           {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
             "class": "devicon-cplusplus-plain",
             "name": "C++"
           },
@@ -124,6 +161,10 @@
         "url":"https://github.com/utkarshyadav009/CMP304-Image-Classifier",
         "technologies": [
           {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
             "class": "devicon-python-plain",
             "name": "Python"
           },
@@ -145,6 +186,10 @@
         "youtube": "https://www.youtube.com/embed/Y-ux4XKcIb8",
         "technologies": [
           {
+            "class":"devicon-illustrator-plain",
+            "name":"AI"
+          },
+          {
             "class": "devicon-cplusplus-plain",
             "name": "C++"
           },
@@ -155,6 +200,70 @@
           {
             "class": "devicon-unrealengine-plain",
             "name": "Unreal Engine"
+          }
+        ]
+      },
+      {
+        "title": "4-Player Networking Racing Game",
+        "startDate": "January 2022 - March 2022",
+        "description": "A multiplayer game developed using SFML networking API. It features a 4-player racing experience, utilizing TCP protocol for data transfer in a hub-to-client model. Each player sends positional data to the server, which is then directed to the respective clients. The application incorporates a sophisticated quadratic prediction algorithm to improve gameplay. However, due to the choice of positional data transfer, the game experiences lag. Optimizing the transfer model by sending key presses would enable real-time updates of player positions, enhancing the gaming experience.",
+        "images": [
+          "images/portfolio/Networked-RacingGame/1.jpg",
+          "images/portfolio/Networked-RacingGame/2.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/K2iVgn2zQnU",
+        "url": "https://github.com/utkarshyadav009/cmp303-Project",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-opengl-plain",
+            "name":"SFML"
+          }
+        ]
+      },
+      {
+        "title": "Multi-threaded Mandelbrot CPU",
+        "startDate": "March 2021 - May 2021",
+        "description": "Multi-threaded Mandelbrot CPU is a project that utilizes thread pooling to efficiently generate the visually stunning Mandelbrot set. With the help of the SFML graphics library, this project provides a high-performance and visually captivating exploration of fractal mathematics.",
+        "images": [
+          "images/portfolio/Mandelbrot-Multithreaded/1.jpg",
+          "images/portfolio/Mandelbrot-Multithreaded/3.jpg",
+          "images/portfolio/Mandelbrot-Multithreaded/4.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/YwMP-n9Zjc8",
+        "url": "https://github.com/utkarshyadav009/Mandelbrot-set",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-SFML-plain",
+            "name":"SFML"
+          }
+        ]
+      },
+      {
+        "title": "Multi-threaded Anagram Finder",
+        "startDate": "September 2020 - May 2021",
+        "description": "Multi-threaded Anagram Finder is a project that efficiently finds anagrams using two data structures, unordered maps and a binary tree. By leveraging thread pooling, it optimizes the process of generating and searching through all possible permutations of a given word. With its computational ease and comprehensive dictionary, it provides a quick and reliable solution for finding anagrams.",
+        "images": [
+          "images/portfolio/Anagram-Finder-Multithreaded/1.jpg",
+          "images/portfolio/Anagram-Finder-Multithreaded/2.jpg"
+        ],
+        "youtube":"https://www.youtube.com/embed/WKWD89zhhKw",
+        "url": "https://github.com/utkarshyadav009/CMP202-Anagram-Finder-2.0",
+        "technologies":[
+          {
+            "class": "devicon-cplusplus-plain",
+            "name":"C++"
+          },
+          {
+            "class":"devicon-visualstudio-plain",
+            "name":"Visual Studios"
           }
         ]
       },
@@ -256,38 +365,26 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
-        "mainTech": [
-          "Angular 8/9/10"
-        ],
-        "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
-        ]
-      },
-      {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
-        "mainTech": [
-          "Angular 7/8"
-        ],
-        "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
-        ]
+          "title": "Student at Abertay",
+          "years": "2019 - 2023",
+          "mainTech": [
+          ],
+          "technologies": [
+              "Phase-Functioned Neural Networks (PFNN)",
+              "Procedural Animation",
+              "Unity",
+              "Godot",
+              "ChatGPT",
+              "Stable Diffusion",
+              "Multithreading",
+              "Data Structures and Algorithms",
+              "Tools Programming",
+              "AR/VR in Games",
+              "DirectX Shaders",
+              "OpenGL",
+              "SFML"
+          ]
       }
-    ]
+  ]
+
   }

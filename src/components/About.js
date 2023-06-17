@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import pythonIcon from "@iconify/icons-logos/python";
 import cplusplusIcon from "@iconify/icons-logos/c-plusplus";
 import unrealIcon from "@iconify/icons-simple-icons/unrealengine";
+import AIIcon from "@iconify/icons-eos-icons/ai";
 
 
 class About extends Component {
@@ -40,8 +41,8 @@ class About extends Component {
                     style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={pythonIcon}
-                    style={{ fontSize: "300%", margin: "9% 5% 0 5%" }}
+                    icon={AIIcon}
+                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
               </div>
