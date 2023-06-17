@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import pythonIcon from "@iconify/icons-logos/python";
 import cplusplusIcon from "@iconify/icons-logos/c-plusplus";
 import unrealIcon from "@iconify/icons-simple-icons/unrealengine";
 import AIIcon from "@iconify/icons-eos-icons/ai";
