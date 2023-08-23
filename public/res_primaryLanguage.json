@@ -11,7 +11,7 @@
     },
     "projects": [
       {
-        "title": "AI Animation in Unreal Engine",
+        "title": "Phase-Functioned-Neural-Network(PFNN) in Unreal Engine (Unfinished)",
         "startDate": "September 2022 - May 2023",
         "description": "The project implements Phase-Functioned Neural Network (PFNN) by Daniel Holden (2017) within Unreal Engine to manage complex character animations. The project creates a custom plugin to access third party libraries used in the orignal paper and to stream line the process of recreating the paper in Unreal Engine. Despite advancements in loading network weights asynchronously and calculating trajectories, two primary challenges persist. First, character mesh often undergoes deformation, significantly impacting the visual quality of animations. Second, trajectory calculation inaccuracies lead to inconsistencies in movement predictions. These core issues currently compromise the efficacy of the system, and addressing them forms the crux of ongoing and future development efforts.",
         "images": [
@@ -65,7 +65,7 @@
         ]
       },
       {
-        "title": "Unreal AR Pong Game",
+        "title": "Augmented-Reality Beer Pong Game (Unreal Engine)",
         "startDate": "September 2022 - January 2023",
         "description": "BeerPog Champ is an AR-based game inspired by Beer-Pong. Using motion sensor data, players throw virtual ping-pong balls into cups on a virtual table. The game features a simple menu system and aims to provide fun gameplay.",
         "images": [
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "title": "Gek-Go",
+        "title": "Gek-Go 3D Puzzle Game",
         "startDate": "September 2021 - May 2022",
         "description": "A DES310 group project, mentored by Rockstar. I worked as the engine and tools programmer for this project, developing the initial traversal mechanic for the beta build. After that I went on to work on the water shader, skybox, butterfly particle effects, animations in unreal engine, and inverse kinematics.",
         "images": [
@@ -116,7 +116,7 @@
         ]
       },
       {
-        "title": "AI Handwritten Digit-Recognition",
+        "title": "Feed-Forward-Neural-Network for Handwritten Digit-Recognition",
         "startDate": "January 2022 - March 2022",
         "description": "Handwritten digit recognition using the MNIST dataset is based ona feed forward neural network architecture and uses a softmax actiavtion function, It is a shallow neural network with no hidden layers. SFML library is used for GUI. The number 6 and 9 do not get recogenised properly in this version, maybe due to the limited training data provided and lack of hidden layers",
         "images": [
@@ -147,7 +147,7 @@
         ]
       },
       {
-        "title": "AI Image-Classifier",
+        "title": "Convolutional-Neural-Network for Image-Classification",
         "startDate": "March 2022 - May 2022",
         "description": "The project is an image classifier developed using Jupyter Notebook and Python. It utilizes a convolutional neural network trained on the CIFAR-10 dataset. Google Colab is used for dataset loading and model training, while the Keras API enables quick definition of deep learning models. Tkinter graphics library provides a graphical user interface for custom image inputs.",
         "images": [
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "title": "AI Patrol Mechanic Unreal Engine",
+        "title": "AI Patrol Guard Mechanic Unreal Engine",
         "startDate": "September 2021 - January 2022",
         "description": "Patrol Mechanic is an Unreal Engine project showcasing AI patrol guards. Utilizing behavior trees and task nodes, the guards are programmed to protect predefined paths. They employ sight and hearing senses to detect and respond to the player's presence, initiating a chase if spotted. The project highlights the implementation of multiple AI guards to enhance security and create engaging gameplay scenarios.",
         "images": [
@@ -268,7 +268,7 @@
         ]
       },
       {
-        "title": "DirectX Shaders",
+        "title": "Neon Genesis Evangelion using D3D11 Shaders",
         "startDate": "September 2021 - January 2022",
         "description": "A CMP301 project, uses D3D11 Shaders to render a scene from the cult anime Neon-Genesis Evangelion. Gerstner Wave Equation is used for water simulations. Bloom is applied to both the light sources in the scene including the water.",
         "images": [
@@ -316,7 +316,7 @@
         ]
       },
       {
-        "title": "Carbon Rapture",
+        "title": "Carbon Rapture (Godot)",
         "startDate": "June 2021 - June 2021",
         "description": "Carbon Rapture is a game jam entry for the ASGJam focused on carbon capture for climate action. It offers an engaging and educational experience, teaching players about the process of carbon capturing through  interactive gameplay and intuitive mechanics, , promoting awareness and knowledge about this important environmental process.",
         "images": [
@@ -340,7 +340,7 @@
         ]
       },
       {
-        "title": "Loopy Trajectory",
+        "title": "Loopy Trajectory (Unity)",
         "startDate": "October 2019 - October 2019",
         "description": "Loopy Trajectory is a thrilling game jam creation, with the theme of revolution in mind, it is reminiscent of the sensation 'Getting Over It.' Developed in Unity, the game follows the captivating story of Bob, a stranded spaceship pilot trapped in interstellar space. Players embark on an epic journey, maneuvering through challenging levels by utilizing wormholes to reach home. With an engaging storyline and narrative crafted by me, the game immerses players in Bob's extraordinary quest. The evocative audio design, featuring a narrator delivering memorable quotes like 'Don't hate the player, hate the game,' adds an extra layer of depth to this gripping experience.",
         "images": [
