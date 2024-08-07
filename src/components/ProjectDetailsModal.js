@@ -15,9 +15,8 @@ class ProjectDetailsModal extends Component {
       var url = this.props.data.url;
       var youtube = this.props.data.youtube;
 
-      if (this.props.data.technologies) {
-        var tech = technologies.map((icons, i) => {
-          return (
+      var tech = technologies
+        ? technologies.map((icons, i) => (
             <li className="list-inline-item mx-3" key={i}>
               <span>
                 <div className="text-center">
@@ -29,30 +28,31 @@ class ProjectDetailsModal extends Component {
                 </div>
               </span>
             </li>
-          );
-        });
+          ))
+        : null;
 
-        if (this.props.data.images) {
-          var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
-          });
-        }
-
-        if (youtube) {
-          img.unshift(
-            <div key="video-container" className="video-container">
-              <iframe
-                width="100%"
-                height="100%"
-                src={youtube}
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                title="Embedded YouTube Video"
-              ></iframe>
+      var img = images
+        ? images.map((elem, i) => (
+            <div key={i} className="slider-image-wrapper">
+              <img src={elem} alt={`slide-${i}`} className="slider-image" />
             </div>
-          );
-        }
+          ))
+        : [];
+
+      if (youtube) {
+        img.unshift(
+          <div key="video-container" className="video-container">
+            <iframe
+              width="100%"
+              height="100%"
+              src={youtube}
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="Embedded YouTube Video"
+            ></iframe>
+          </div>
+        );
       }
     }
 
@@ -92,7 +92,7 @@ class ProjectDetailsModal extends Component {
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
               animation="scaleOutAnimation"
-              className="slider-image"
+              className="slider-image-container"
             >
               {img}
             </AwesomeSlider>
