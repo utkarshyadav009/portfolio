@@ -386,6 +386,21 @@
     ],
     "experience": [
       {
+        "title": "Associate Lecturer London Metropolitan University",
+        "years": "2023 - Present",
+        "mainTech": [
+        ],
+        "technologies": [
+            "C++",
+            "OpenGL",
+            "Unity",
+            "Godot",
+            "Unreal Engine",
+            "Tools Programming",
+            "SFML"
+        ]
+    },
+      {
           "title": "Student at Abertay",
           "years": "2019 - 2023",
           "mainTech": [
@@ -406,6 +421,8 @@
               "SFML"
           ]
       }
+
+
   ]
 
   }
