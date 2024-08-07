@@ -11,6 +11,27 @@
     },
     "projects": [
       {
+        "title": "Escape Room for the SCDM Summer Show London Metropolitan University ",
+        "startDate": "March 2024 - June 2024",
+        "description": "Led a team of Level 4-6 students to create an interactive escape room for the SCDM Summer Show. Designed a detective mystery case-solving theme, from concept to execution. Project timeline over a two-month.",
+        "images": [
+          "images/portfolio/Escape-Room/1.jpg",
+          "images/portfolio/Escape-Room/2.jpg",
+          "images/portfolio/Escape-Room/3.jpg",
+          "images/portfolio/Escape-Room/4.jpg",
+          "images/portfolio/Escape-Room/5.jpg",
+          "images/portfolio/Escape-Room/6.jpg",
+          "images/portfolio/Escape-Room/7.jpg",
+          "images/portfolio/Escape-Room/8.jpg",
+          "images/portfolio/Escape-Room/9.jpg",
+          "images/portfolio/Escape-Room/10.jpg"
+        ],
+        "youtube": "https://www.youtube.com/embed/DkqrtNrdbmg",
+        
+        "technologies": [
+        ]
+      },
+      {
         "title": "Phase-Functioned-Neural-Network(PFNN) in Unreal Engine (Unfinished)",
         "startDate": "September 2022 - May 2023",
         "description": "The project implements Phase-Functioned Neural Network (PFNN) by Daniel Holden (2017) within Unreal Engine to manage complex character animations. The project creates a custom plugin to access third party libraries used in the orignal paper and to stream line the process of recreating the paper in Unreal Engine. Despite advancements in loading network weights asynchronously and calculating trajectories, two primary challenges persist. First, character mesh often undergoes deformation, significantly impacting the visual quality of animations. Second, trajectory calculation inaccuracies lead to inconsistencies in movement predictions. These core issues currently compromise the efficacy of the system, and addressing them forms the crux of ongoing and future development efforts.",
