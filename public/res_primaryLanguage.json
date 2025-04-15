@@ -80,6 +80,29 @@
         ]
       },
       {
+        "title": "Procedural Animation in Unreal Engine (Update)",
+        "startDate": "May 2023",
+        "description": "This project is an updated version of the procedural animation system I previously developed in Unreal Engine. It focuses on enhancing the quadruped animation system using the Control Rig system and Full Body IK node. The control rig was refined with improved bone controllers for manipulating the gecko's feet based on external data. Feet positions were calculated using line traces, allowing the gecko to step in an arc onto new positions with greater precision. The Full Body IK node was optimized to calculate bone positions using advanced inverse kinematics algorithms, resulting in even more realistic character animations. A post-process animation blueprint was further enhanced to layer multiple animations, incorporate physical simulations, and adjust body parts dynamically. This updated system demonstrates the power of Unreal Engine's animation tools in creating lifelike and immersive quadruped movements.",
+        "images": [
+          "images/portfolio/Procedural-Animation-Unreal-Engine/update.png"
+        ],
+        "youtube": "https://www.youtube.com/embed/LQEiGzFz-KY",
+        "technologies": [
+          {
+        "class": "devicon-maya-plain",
+        "name": "Maya"
+          },
+          {
+        "class": "devicon-unrealengine-plain",
+        "name": "Unreal Engine"
+          },
+          {
+        "class": "devicon-cplusplus-plain",
+        "name": "C++"
+          }
+        ]
+      },
+      {
         "title": "Procedural Animation in Unreal Engine",
         "startDate": "September 2022 - January 2023",
         "description": "The project showcases a procedural animation system developed in Unreal Engine, utilizing the Control Rig system and Full Body IK node. The control rig was created with bone controllers for manipulating the gecko's feet based on external data. Feet position was calculated using line traces, allowing the gecko to step in an arc onto new positions. The Full Body IK node calculated bone positions using inverse kinematics algorithms, resulting in realistic character animations. A post-process animation blueprint enhanced believability by layering multiple animations, incorporating physical simulations, and adjusting body parts. This blueprint seamlessly blended animations to create lifelike gecko behavior. The project leverages Unreal Engine's powerful animation tools to achieve dynamic and immersive character movements",
