@@ -1,0 +1,680 @@
+{
+  "name": "Utkarsh Yadav",
+  "role": "ML/AI research engineer",
+  "location": "Dundee, Scotland",
+  "email": "utkarshyadav449@gmail.com",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/utkarshyadav009"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/channel/UCix8sxMXL_Bd5FV69zlN6Ug"
+    }
+  ],
+  "photo": "images/utkarsh-yadav.jpg",
+  "lede": "I build generative AI that listens, talks back and draws, and I get it running in real time: on GPU clusters for live shows, and on an 8 GB robot.",
+  "intro": [
+    "Most recently an AI/ML Researcher on CoSTAR at Abertay University. Before that, two years lecturing games and 3D at London Met."
+  ],
+  "now": "Looking for research engineering work in generative AI for creative technology.",
+  "selected": [
+    {
+      "id": "characterplex",
+      "title": "CharacterPlex",
+      "tagline": "A full-duplex speech model that stays in character",
+      "year": "2026",
+      "context": "CoSTAR, Abertay University",
+      "summary": "The team wanted spoken characters that follow a story. I fine-tuned NVIDIA PersonaPlex 7B (built on Moshi) so it plays a character from a character sheet, follows story beats and live director notes, and laughs, sighs or whispers on cue, while keeping the base model’s interruptions and backchannels. I generated the training data, wrote the recipe, trained a LoRA and then a full-parameter model, and built a benchmark to measure what actually changed.",
+      "results": [
+        {
+          "value": "+66 pts",
+          "label": "director-note obedience over the base model"
+        },
+        {
+          "value": "2% → 92%",
+          "label": "memory reveals when a note asks for one"
+        },
+        {
+          "value": "776 h",
+          "label": "synthetic training audio, 13,771 scripted episodes"
+        },
+        {
+          "value": "8× H200",
+          "label": "full-parameter run, DDP + ZeRO-2, ~65 GPU-hours"
+        }
+      ],
+      "notes": "CharacterBench scores 13 characters with local LLM judges and bootstrap confidence intervals. It also showed where the fine-tune got worse (recalling the user’s name), which I fixed at runtime with a user-memory channel rather than another training run.",
+      "stack": [
+        "PyTorch",
+        "LoRA",
+        "DDP",
+        "ZeRO-2",
+        "Slurm",
+        "Moshi / Mimi",
+        "Kyutai STT"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/utkarshyadav009/CharacterPlex"
+        }
+      ],
+      "images": [],
+      "chapter": "costar",
+      "icon": "mask",
+      "hook": "A 7B voice model that stays in character and takes direction.",
+      "headline": {
+        "value": "+66 pts",
+        "label": "director-note obedience"
+      }
+    },
+    {
+      "id": "personaplex-scale",
+      "title": "PersonaPlex at scale",
+      "tagline": "Twelve live voice calls on one 48 GB GPU",
+      "year": "2026",
+      "context": "CoSTAR, Abertay University",
+      "summary": "A speech-to-speech model that answers one caller at a time is a demo, not a service. I put PersonaPlex behind vLLM-Omni so one copy of the weights serves many callers: each caller gets their own paged KV cache and codec state, all live calls advance in one batched GPU step every 80 ms, and a gateway admits, pins and rejects calls. The same setup serves CharacterPlex.",
+      "results": [
+        {
+          "value": "12",
+          "label": "real-time calls per 48 GB GPU"
+        },
+        {
+          "value": "130–170 ms",
+          "label": "to first audio with one or two callers"
+        },
+        {
+          "value": "1 patch",
+          "label": "to vLLM-Omni to enable sampling (greedy left the model silent)"
+        }
+      ],
+      "stack": [
+        "vLLM-Omni",
+        "Paged attention",
+        "FastAPI",
+        "WebSockets",
+        "Caddy"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/utkarshyadav009/personaplex-scale"
+        }
+      ],
+      "images": [],
+      "chapter": "costar",
+      "icon": "mushrooms",
+      "hook": "One GPU, twelve people talking to it at once.",
+      "headline": {
+        "value": "12 calls",
+        "label": "per 48 GB GPU, in real time"
+      }
+    },
+    {
+      "id": "speech-systems",
+      "title": "Speech Systems",
+      "tagline": "Say it on stage, see it on screen",
+      "year": "2026",
+      "context": "CoSTAR, Abertay University",
+      "summary": "The team was curious what speech-to-speech models could do, so I built an orchestrator in a day that loads Moshi, PersonaPlex, Nemotron VoiceChat and others behind one page, and demoed it the next day. Then I heard about an improv idea: a performer talks into a microphone and the screen draws it. I built that in an evening (Ultravox writes the prompt, FLUX.1-schnell renders it) and over the following week extended it to 3D objects, splat scenes and rigged, animated characters.",
+      "results": [
+        {
+          "value": "0.86 s",
+          "label": "speech end to final picture, p50 (was 1.30 s)"
+        },
+        {
+          "value": "0.91 s",
+          "label": "p90 (was 2.87 s)"
+        },
+        {
+          "value": "241 ms",
+          "label": "FLUX at 768² with torch.compile (was 584 ms)"
+        },
+        {
+          "value": "1 core",
+          "label": "what the whole stack had been pinned to by the Slurm launch, until I found it"
+        }
+      ],
+      "stack": [
+        "FastAPI",
+        "Ultravox",
+        "FLUX.1",
+        "SDXL / DMD2",
+        "ControlNet",
+        "TRELLIS.2",
+        "Gaussian splats"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/utkarshyadav009/speech-systems"
+        }
+      ],
+      "images": [],
+      "chapter": "costar",
+      "icon": "sprout",
+      "hook": "Say it on stage and watch it appear: picture, 3D, then a moving character.",
+      "headline": {
+        "value": "0.86 s",
+        "label": "from speech to picture"
+      }
+    },
+    {
+      "id": "soran-labs",
+      "title": "Soran Labs",
+      "tagline": "A 3D world model that outputs relightable Gaussian splats",
+      "year": "2026",
+      "context": "CoSTAR, Abertay University",
+      "summary": "I was brought in to understand and maintain this pipeline, which chains several large generative models (including NVIDIA Lyra) to turn a prompt into a relightable 3D Gaussian splat scene. Within a week I had it running on a smaller server with four 48 GB GPUs by lazy-loading and offloading the models that are not needed at each stage (text encoders, camera-trajectory models) and quantising parts of it. When the original developer left I maintained it, and packaged it into Apptainer containers for deployment on the cluster.",
+      "results": [
+        {
+          "value": "1 week",
+          "label": "from first look to running on the smaller server"
+        },
+        {
+          "value": "4× 48 GB",
+          "label": "GPUs, down from the original setup"
+        }
+      ],
+      "stack": [
+        "PyTorch",
+        "Gaussian splatting",
+        "Offloading",
+        "Quantisation",
+        "Apptainer",
+        "Slurm"
+      ],
+      "links": [],
+      "linkNote": "Lab code, not public.",
+      "images": [],
+      "chapter": "costar",
+      "icon": "world",
+      "hook": "A world model that grows relightable 3D scenes, squeezed onto smaller GPUs.",
+      "headline": {
+        "value": "1 week",
+        "label": "to port and run it"
+      }
+    },
+    {
+      "id": "bmo",
+      "title": "BMO",
+      "tagline": "An embodied AI companion, and my MSc thesis",
+      "year": "2025–26",
+      "context": "MSc thesis, Abertay University",
+      "summary": "BMO is a companion robot in a 3D-printed case that sees, hears and talks without the cloud, on an NVIDIA Jetson Orin Nano. I trained a fusion model with a cross-attention bridge on top of frozen V-JEPA 2 (video) and WavJEPA (audio) encoders, fine-tuned a thinker/speaker language-model pair (LFM2.5-350M and Qwen3-0.6B) steered with directive tokens, and wrote a C++/CUDA engine so full-duplex Moshi runs in real time on the device. The face is a procedural C++/GLSL engine built from signed distance functions.",
+      "results": [
+        {
+          "value": "64.5 ms",
+          "label": "per 80 ms audio frame on an 8 GB Jetson (p50)"
+        },
+        {
+          "value": "2.6 → 0.45 ms",
+          "label": "audio-codec RVQ with fused CUDA kernels"
+        },
+        {
+          "value": "42%",
+          "label": "R@1 audio↔video retrieval, clip-disjoint VGGSound (ImageBind: 30%)"
+        },
+        {
+          "value": "Distinction",
+          "label": "MSc, GPA 4.36"
+        }
+      ],
+      "notes": "The retrieval work is written up as a paper, “Hearing What You See: Efficient Audio-Visual Retrieval from Frozen Encoders”, under review at ECIR 2027. 155.9M trained parameters sit on 722.5M frozen ones. The paper is careful about its own claims: a residual adapter on ImageBind trained with the same clips closes most of the gap, and an audit found batch-dependent padding had inflated an earlier checkpoint by more than twenty points.",
+      "stack": [
+        "V-JEPA 2",
+        "WavJEPA",
+        "C++",
+        "CUDA",
+        "TensorRT",
+        "ONNX",
+        "ggml",
+        "GLSL",
+        "Jetson Orin Nano"
+      ],
+      "links": [
+        {
+          "label": "BMO",
+          "url": "https://github.com/utkarshyadav009/BMO-Project"
+        },
+        {
+          "label": "Jetson engine",
+          "url": "https://github.com/utkarshyadav009/bmo_jetson"
+        },
+        {
+          "label": "AV-Fusion paper code",
+          "url": "https://github.com/utkarshyadav009/AV-Fusion"
+        }
+      ],
+      "images": [
+        {
+          "src": "images/portfolio/BMO/bmo-demo.jpg",
+          "alt": "Showing BMO to a visitor at the Abertay MSc Showcase 2026"
+        },
+        {
+          "src": "images/portfolio/BMO/bmo-closeup.jpg",
+          "alt": "BMO, a teal 3D-printed robot with a smiling face on its screen"
+        },
+        {
+          "src": "images/portfolio/BMO/bmo-portrait.jpg",
+          "alt": "Utkarsh holding BMO at the MSc Showcase"
+        }
+      ],
+      "chapter": "bmo",
+      "icon": "robot",
+      "hook": "A desk-sized companion that sees, hears and talks, with no cloud."
+    }
+  ],
+  "treasureHunts": {
+    "intro": "Two summers leading groups of 20–40 international teenagers in Scarborough, with a city-wide treasure hunt each year built around the same mystery.",
+    "entries": [
+      {
+        "year": "2025",
+        "title": "On paper",
+        "text": "Letters, map puzzles, QR trails and an audio mystery ending at the Spa."
+      },
+      {
+        "year": "2026",
+        "title": "On phones",
+        "text": "The same story, rebuilt fully digital."
+      }
+    ],
+    "mediaNote": "Photos coming soon."
+  },
+  "experience": [
+    {
+      "dates": "2026",
+      "role": "AI/ML Researcher",
+      "org": "Abertay University, CoSTAR"
+    },
+    {
+      "dates": "2025–26",
+      "role": "MSc Applied Artificial Intelligence and User Experience",
+      "org": "Abertay University"
+    },
+    {
+      "dates": "2025–26",
+      "role": "Barista",
+      "org": "Annie’s Café, Abertay University"
+    },
+    {
+      "dates": "2025, 2026",
+      "role": "Team Leader",
+      "org": "Anglotec Academy, Scarborough"
+    },
+    {
+      "dates": "2023–25",
+      "role": "Associate Lecturer",
+      "org": "London Metropolitan University"
+    },
+    {
+      "dates": "2019–23",
+      "role": "BSc (Hons) Computer Games Application Development",
+      "org": "Abertay University"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Models and training",
+      "items": [
+        "PyTorch",
+        "Hugging Face",
+        "LoRA / PEFT",
+        "Full fine-tuning",
+        "DDP, ZeRO-2",
+        "Diffusion",
+        "ControlNet",
+        "Speech-to-speech",
+        "Self-supervised encoders (JEPA)"
+      ]
+    },
+    {
+      "group": "Inference and systems",
+      "items": [
+        "vLLM / vLLM-Omni",
+        "CUDA",
+        "TensorRT",
+        "ONNX",
+        "torch.compile",
+        "Quantisation",
+        "Slurm",
+        "Apptainer",
+        "FastAPI"
+      ]
+    },
+    {
+      "group": "3D and real time",
+      "items": [
+        "Gaussian splatting",
+        "TRELLIS.2",
+        "Unreal Engine",
+        "Unity",
+        "OpenGL",
+        "DirectX 11",
+        "GLSL / HLSL",
+        "Blender"
+      ]
+    },
+    {
+      "group": "Languages",
+      "items": [
+        "Python",
+        "C++",
+        "C#",
+        "JavaScript"
+      ]
+    }
+  ],
+  "earlier": [
+    {
+      "title": "3D Modelling Showcase",
+      "year": "2024–25",
+      "dates": "September 2024 - January 2025",
+      "summary": "A collection of my latest 3D modeling work created in Blender. This showcase highlights my skills in creating detailed and realistic 3D assets, focusing on texturing, lighting, and rendering techniques.",
+      "images": [
+        "images/portfolio/3D-Modelling/1.png",
+        "images/portfolio/3D-Modelling/2.png",
+        "images/portfolio/3D-Modelling/3.png",
+        "images/portfolio/3D-Modelling/4.png",
+        "images/portfolio/3D-Modelling/5.png",
+        "images/portfolio/3D-Modelling/6.png"
+      ],
+      "youtube": null,
+      "url": null,
+      "tags": [
+        "Blender"
+      ]
+    },
+    {
+      "title": "Escape room for the SCDM Summer Show",
+      "year": "2024",
+      "dates": "March 2024 - June 2024",
+      "summary": "Led a team of Level 4-6 students to create an interactive escape room for the SCDM Summer Show. Designed a detective mystery case-solving theme, from concept to execution. Project timeline over a two-month.",
+      "images": [
+        "images/portfolio/Escape-Room/1.jpg",
+        "images/portfolio/Escape-Room/2.jpg",
+        "images/portfolio/Escape-Room/3.jpg",
+        "images/portfolio/Escape-Room/4.jpg",
+        "images/portfolio/Escape-Room/5.jpg",
+        "images/portfolio/Escape-Room/6.jpg",
+        "images/portfolio/Escape-Room/7.jpg",
+        "images/portfolio/Escape-Room/8.jpg",
+        "images/portfolio/Escape-Room/9.jpg",
+        "images/portfolio/Escape-Room/10.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/DkqrtNrdbmg",
+      "url": null,
+      "tags": []
+    },
+    {
+      "title": "Phase-Functioned Neural Network (PFNN) in Unreal Engine (Unfinished)",
+      "year": "2022–23",
+      "dates": "September 2022 - May 2023",
+      "summary": "The project implements Phase-Functioned Neural Network (PFNN) by Daniel Holden (2017) within Unreal Engine to manage complex character animations. The project creates a custom plugin to access third party libraries used in the original paper and to streamline the process of recreating the paper in Unreal Engine. Despite advancements in loading network weights asynchronously and calculating trajectories, two primary challenges persist. First, character mesh often undergoes deformation, significantly impacting the visual quality of animations. Second, trajectory calculation inaccuracies lead to inconsistencies in movement predictions. These core issues currently compromise the efficacy of the system, and addressing them forms the crux of ongoing and future development efforts.",
+      "images": [
+        "images/portfolio/PFNN-Unreal-Engine/1.jpg",
+        "images/portfolio/PFNN-Unreal-Engine/2.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/dO3I4DsRHRI",
+      "url": "https://github.com/utkarshyadav009/Phase-Functioned-Neural-Network-UE5",
+      "tags": [
+        "Maya",
+        "Unreal Engine",
+        "Blender",
+        "C++"
+      ]
+    },
+    {
+      "title": "Procedural Animation in Unreal Engine (Update)",
+      "year": "2023",
+      "dates": "May 2023",
+      "summary": "This project is an updated version of the procedural animation system I previously developed in Unreal Engine. It focuses on enhancing the quadruped animation system using the Control Rig system and Full Body IK node. The control rig was refined with improved bone controllers for manipulating the gecko's feet based on external data. Feet positions were calculated using line traces, allowing the gecko to step in an arc onto new positions with greater precision. The Full Body IK node was optimized to calculate bone positions using advanced inverse kinematics algorithms, resulting in even more realistic character animations. A post-process animation blueprint was further enhanced to layer multiple animations, incorporate physical simulations, and adjust body parts dynamically. This updated system demonstrates the power of Unreal Engine's animation tools in creating lifelike and immersive quadruped movements.",
+      "images": [
+        "images/portfolio/Procedural-Animation-Unreal-Engine/update.png"
+      ],
+      "youtube": "https://www.youtube.com/embed/LQEiGzFz-KY",
+      "url": null,
+      "tags": [
+        "Maya",
+        "Unreal Engine",
+        "C++"
+      ]
+    },
+    {
+      "title": "Procedural Animation in Unreal Engine",
+      "year": "2022–23",
+      "dates": "September 2022 - January 2023",
+      "summary": "The project showcases a procedural animation system developed in Unreal Engine, utilizing the Control Rig system and Full Body IK node. The control rig was created with bone controllers for manipulating the gecko's feet based on external data. Feet position was calculated using line traces, allowing the gecko to step in an arc onto new positions. The Full Body IK node calculated bone positions using inverse kinematics algorithms, resulting in realistic character animations. A post-process animation blueprint enhanced believability by layering multiple animations, incorporating physical simulations, and adjusting body parts. This blueprint seamlessly blended animations to create lifelike gecko behavior. The project leverages Unreal Engine's powerful animation tools to achieve dynamic and immersive character movements",
+      "images": [
+        "images/portfolio/Procedural-Animation-Unreal-Engine/1.jpg",
+        "images/portfolio/Procedural-Animation-Unreal-Engine/2.jpg",
+        "images/portfolio/Procedural-Animation-Unreal-Engine/3.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/ExgCP27vJGc",
+      "url": null,
+      "tags": [
+        "Maya",
+        "Unreal Engine",
+        "C++"
+      ]
+    },
+    {
+      "title": "Augmented reality Beer Pong Game (Unreal Engine)",
+      "year": "2022–23",
+      "dates": "September 2022 - January 2023",
+      "summary": "BeerPog Champ is an AR-based game inspired by Beer-Pong. Using motion sensor data, players throw virtual ping-pong balls into cups on a virtual table. The game features a simple menu system and aims to provide fun gameplay.",
+      "images": [
+        "images/portfolio/Unreal-AR/1.jpg",
+        "images/portfolio/Unreal-AR/2.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/_V6gROz8Lo4",
+      "url": null,
+      "tags": [
+        "Unreal Engine",
+        "C++",
+        "Android Studio"
+      ]
+    },
+    {
+      "title": "Gek-Go 3D Puzzle Game",
+      "year": "2021–22",
+      "dates": "September 2021 - May 2022",
+      "summary": "A DES310 group project, mentored by Rockstar. I worked as the engine and tools programmer for this project, developing the initial traversal mechanic for the beta build. After that I went on to work on the water shader, skybox, butterfly particle effects, animations in unreal engine, and inverse kinematics.",
+      "images": [
+        "images/portfolio/Gek-Go/GekGo.jpg",
+        "images/portfolio/Gek-Go/1.jpg",
+        "images/portfolio/Gek-Go/2.jpg",
+        "images/portfolio/Gek-Go/3.jpg",
+        "images/portfolio/Gek-Go/4.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/AFXZTwJwWyM",
+      "url": null,
+      "tags": [
+        "Maya",
+        "Unreal Engine",
+        "C++"
+      ]
+    },
+    {
+      "title": "Feed-forward neural network for handwritten digit recognition",
+      "year": "2022",
+      "dates": "January 2022 - March 2022",
+      "summary": "Handwritten digit recognition using the MNIST dataset is based ona feed forward neural network architecture and uses a softmax actiavtion function, It is a shallow neural network with no hidden layers. SFML library is used for GUI. The number 6 and 9 do not get recogenised properly in this version, maybe due to the limited training data provided and lack of hidden layers",
+      "images": [
+        "images/portfolio/handwritten-digit-recoginition/1.jpg",
+        "images/portfolio/handwritten-digit-recoginition/2.jpg",
+        "images/portfolio/handwritten-digit-recoginition/3.jpg",
+        "images/portfolio/handwritten-digit-recoginition/4.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/QLE3xwZhBds",
+      "url": "https://github.com/utkarshyadav009/Digit-Recognition-CMP304-Project",
+      "tags": [
+        "C++",
+        "SFML"
+      ]
+    },
+    {
+      "title": "Convolutional neural network for image classification",
+      "year": "2022",
+      "dates": "March 2022 - May 2022",
+      "summary": "The project is an image classifier developed using Jupyter Notebook and Python. It utilizes a convolutional neural network trained on the CIFAR-10 dataset. Google Colab is used for dataset loading and model training, while the Keras API enables quick definition of deep learning models. Tkinter graphics library provides a graphical user interface for custom image inputs.",
+      "images": [
+        "images/portfolio/Image-Classifier/2.jpg",
+        "images/portfolio/Image-Classifier/1.jpg",
+        "images/portfolio/Image-Classifier/3.jpg",
+        "images/portfolio/Image-Classifier/4.jpg",
+        "images/portfolio/Image-Classifier/5.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/c9A7-P9fl-c",
+      "url": "https://github.com/utkarshyadav009/CMP304-Image-Classifier",
+      "tags": [
+        "Python",
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "title": "AI Patrol Guard Mechanic Unreal Engine",
+      "year": "2021–22",
+      "dates": "September 2021 - January 2022",
+      "summary": "Patrol Mechanic is an Unreal Engine project showcasing AI patrol guards. Utilizing behavior trees and task nodes, the guards are programmed to protect predefined paths. They employ sight and hearing senses to detect and respond to the player's presence, initiating a chase if spotted. The project highlights the implementation of multiple AI guards to enhance security and create engaging gameplay scenarios.",
+      "images": [
+        "images/portfolio/Patrol-Mechanic-UnrealEngine/1.jpg",
+        "images/portfolio/Patrol-Mechanic-UnrealEngine/2.jpg",
+        "images/portfolio/Patrol-Mechanic-UnrealEngine/3.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/Y-ux4XKcIb8",
+      "url": null,
+      "tags": [
+        "C++",
+        "Unreal Engine"
+      ]
+    },
+    {
+      "title": "4-Player Networking Racing Game",
+      "year": "2022",
+      "dates": "January 2022 - March 2022",
+      "summary": "A multiplayer game developed using SFML networking API. It features a 4-player racing experience, utilizing TCP protocol for data transfer in a hub-to-client model. Each player sends positional data to the server, which is then directed to the respective clients. The application incorporates a sophisticated quadratic prediction algorithm to improve gameplay. However, due to the choice of positional data transfer, the game experiences lag. Optimizing the transfer model by sending key presses would enable real-time updates of player positions, enhancing the gaming experience.",
+      "images": [
+        "images/portfolio/Networked-RacingGame/1.jpg",
+        "images/portfolio/Networked-RacingGame/2.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/K2iVgn2zQnU",
+      "url": "https://github.com/utkarshyadav009/cmp303-Project",
+      "tags": [
+        "C++",
+        "SFML"
+      ]
+    },
+    {
+      "title": "Multi-threaded Mandelbrot CPU",
+      "year": "2021",
+      "dates": "March 2021 - May 2021",
+      "summary": "Multi-threaded Mandelbrot CPU is a project that utilizes thread pooling to efficiently generate the visually stunning Mandelbrot set. With the help of the SFML graphics library, this project provides a high-performance and visually captivating exploration of fractal mathematics.",
+      "images": [
+        "images/portfolio/Mandelbrot-Multithreaded/1.jpg",
+        "images/portfolio/Mandelbrot-Multithreaded/3.jpg",
+        "images/portfolio/Mandelbrot-Multithreaded/4.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/YwMP-n9Zjc8",
+      "url": "https://github.com/utkarshyadav009/Mandelbrot-set",
+      "tags": [
+        "C++",
+        "SFML"
+      ]
+    },
+    {
+      "title": "Multi-threaded Anagram Finder",
+      "year": "2020–21",
+      "dates": "September 2020 - May 2021",
+      "summary": "Multi-threaded Anagram Finder is a project that efficiently finds anagrams using two data structures, unordered maps and a binary tree. By leveraging thread pooling, it optimizes the process of generating and searching through all possible permutations of a given word. With its computational ease and comprehensive dictionary, it provides a quick and reliable solution for finding anagrams.",
+      "images": [
+        "images/portfolio/Anagram-Finder-Multithreaded/1.jpg",
+        "images/portfolio/Anagram-Finder-Multithreaded/2.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/WKWD89zhhKw",
+      "url": "https://github.com/utkarshyadav009/CMP202-Anagram-Finder-2.0",
+      "tags": [
+        "C++"
+      ]
+    },
+    {
+      "title": "Neon Genesis Evangelion using D3D11 Shaders",
+      "year": "2021–22",
+      "dates": "September 2021 - January 2022",
+      "summary": "A CMP301 project, uses D3D11 Shaders to render a scene from the cult anime Neon-Genesis Evangelion. Gerstner Wave Equation is used for water simulations. Bloom is applied to both the light sources in the scene including the water.",
+      "images": [
+        "images/portfolio/DirectX-Shaders/NGE.jpg",
+        "images/portfolio/DirectX-Shaders/1.jpg",
+        "images/portfolio/DirectX-Shaders/2.jpg",
+        "images/portfolio/DirectX-Shaders/3.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/8fWwnc0_WPo",
+      "url": "https://github.com/utkarshyadav009/DirectXShaders-CMP301-Coursework",
+      "tags": [
+        "C++",
+        "D3D11"
+      ]
+    },
+    {
+      "title": "OpenGL Graveyard Scene",
+      "year": "2020–21",
+      "dates": "September 2020 - January 2021",
+      "summary": "Graveyard Scene is an OpenGL project that immerses you in a hauntingly beautiful graveyard setting. It features a spooky tree, eerie tombstones, and a captivating cottage at the scene's center. The project demonstrates various techniques such as reflection, lighting, and procedural cylinder generation for a well. Additionally, it incorporates object loading and showcases a dynamic day and night cycle, adding depth and realism to the atmospheric experience.",
+      "images": [
+        "images/portfolio/OpenGL-Graveyard-Scene/1.jpg",
+        "images/portfolio/OpenGL-Graveyard-Scene/2.jpg",
+        "images/portfolio/OpenGL-Graveyard-Scene/3.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/Q9DvS-QiNL8",
+      "url": null,
+      "tags": [
+        "C++",
+        "OpenGL"
+      ]
+    },
+    {
+      "title": "Carbon Rapture (Godot)",
+      "year": "2021",
+      "dates": "June 2021 - June 2021",
+      "summary": "Carbon Rapture is a game jam entry for the ASGJam focused on carbon capture for climate action. It offers an engaging and educational experience, teaching players about the process of carbon capturing through  interactive gameplay and intuitive mechanics, , promoting awareness and knowledge about this important environmental process.",
+      "images": [
+        "images/portfolio/Carbon-Rapture/1.jpg",
+        "images/portfolio/Carbon-Rapture/2.jpg",
+        "images/portfolio/Carbon-Rapture/3.jpg",
+        "images/portfolio/Carbon-Rapture/4.jpg",
+        "images/portfolio/Carbon-Rapture/5.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/7fI8RbvLNto",
+      "url": "https://snarmph.itch.io/carbon-rapture",
+      "tags": [
+        "C#",
+        "Godot"
+      ]
+    },
+    {
+      "title": "Loopy Trajectory (Unity)",
+      "year": "2019",
+      "dates": "October 2019 - October 2019",
+      "summary": "Loopy Trajectory is a thrilling game jam creation, with the theme of revolution in mind, it is reminiscent of the sensation 'Getting Over It.' Developed in Unity, the game follows the captivating story of Bob, a stranded spaceship pilot trapped in interstellar space. Players embark on an epic journey, maneuvering through challenging levels by utilizing wormholes to reach home. With an engaging storyline and narrative crafted by me, the game immerses players in Bob's extraordinary quest. The evocative audio design, featuring a narrator delivering memorable quotes like 'Don't hate the player, hate the game,' adds an extra layer of depth to this gripping experience.",
+      "images": [
+        "images/portfolio/Loopy-Trajectory/1.jpg",
+        "images/portfolio/Loopy-Trajectory/2.jpg",
+        "images/portfolio/Loopy-Trajectory/3.jpg"
+      ],
+      "youtube": "https://www.youtube.com/embed/wxJP_Qw7JgY",
+      "url": "https://snarmph.itch.io/loopy-trajectory",
+      "tags": [
+        "C#",
+        "Unity"
+      ]
+    }
+  ],
+  "photoCaption": "me, with cookies",
+  "costar": {
+    "dates": "Sep – Oct 2026",
+    "blurb": "Two months as an AI/ML Researcher on CoSTAR, the national lab for virtual production and live performance."
+  }
+}
