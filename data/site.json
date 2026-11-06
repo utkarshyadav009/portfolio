@@ -672,7 +672,13 @@
       ]
     }
   ],
-  "photoCaption": "me, with cookies",
+  "photoCaption": "me, with BMO",
+  "photoAlt": "Utkarsh Yadav smiling in a leather jacket, holding BMO, his 3D-printed teal robot, at the Abertay MSc Showcase",
+  "sticker": {
+    "src": "images/bmo-sticker.jpg",
+    "alt": "BMO, the robot, smiling",
+    "says": "hi! thanks for reading"
+  },
   "costar": {
     "dates": "Sep – Oct 2026",
     "blurb": "Two months as an AI/ML Researcher on CoSTAR, the national lab for virtual production and live performance."
