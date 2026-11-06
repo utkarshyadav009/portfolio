@@ -20,6 +20,12 @@ export default function Footer({ site }) {
             © {new Date().getFullYear()} {site.name}
           </p>
         </div>
+        {site.sticker && (
+          <figure className="sticker">
+            <p className="sticker-says hand">{site.sticker.says}</p>
+            <img src={site.sticker.src} alt={site.sticker.alt} width="120" height="120" loading="lazy" />
+          </figure>
+        )}
       </div>
     </footer>
   );

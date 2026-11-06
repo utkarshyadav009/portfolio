@@ -24,7 +24,7 @@ export default function Intro({ site }) {
       </div>
       <figure className="intro-photo">
         <Flower size={70} className="photo-flower" />
-        <img src={site.photo} alt={`${site.name} in a green knitted jumper, holding two cookies up like glasses`} width="900" height="1016" />
+        <img src={site.photo} alt={site.photoAlt || `Portrait of ${site.name}`} width="900" height="1016" />
         <Mushroom size={58} className="photo-mushroom" />
         {site.photoCaption && <figcaption className="hand">↖ {site.photoCaption}</figcaption>}
       </figure>
