@@ -23,7 +23,9 @@ export default function TreasureHunts({ data, onOpen }) {
 export function HuntBody({ hunt: h }) {
   return (
     <article className="story-body">
-      <p className="hand muted">{h.year} · Anglotec Academy, Scarborough</p>
+      <p className="hand muted">
+        {h.year} · {h.org}
+      </p>
       <h3 id="dialog-title">{h.title}</h3>
       {(h.story || [h.text]).map((p, i) => (
         <p key={i}>{p}</p>
