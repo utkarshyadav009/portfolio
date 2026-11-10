@@ -273,16 +273,114 @@
     "entries": [
       {
         "year": "2025",
-        "title": "On paper",
-        "text": "Letters, map puzzles, QR trails and an audio mystery ending at the Spa."
+        "title": "On paper: the Elixir",
+        "text": "Sealed letters, a burnt map, a cryptex and a VHS clue.",
+        "cover": "images/thumbs/portfolio/Treasure-Hunts/2025/elixir-bottles.jpg",
+        "coverAlt": "Small corked bottles of green elixir, props from the 2025 hunt",
+        "layout": "photos",
+        "story": [
+          "A city-wide hunt built like an alternate reality game. Teams followed sealed letters, a burnt map and QR-code trails across Scarborough, cracked a cryptex, watched a clue on an old VHS tape, and ended at the Spa with one word: ELIXIR.",
+          "Real local history mixed with a made-up mystery, so the students had a reason to read, talk to each other in English and explore the town."
+        ],
+        "images": [
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/sealed-letter.jpg",
+            "alt": "A wax-sealed envelope and a burnt map on a table"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/aged-letter.jpg",
+            "alt": "A hand-aged letter with wax seals, written as a character in the story"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/spa-map.jpg",
+            "alt": "A map of Scarborough seafront marking the Spa and the final clue"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/elixir-bottles.jpg",
+            "alt": "Small corked bottles of green \"elixir\" made as props"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/cryptex.jpg",
+            "alt": "A brass letter cryptex being opened"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/pirate-chest.jpg",
+            "alt": "A small painted pirate chest used as a prop"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/vhs-clue.jpg",
+            "alt": "A clue playing on an old television from a VHS tape"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/unlock-location.jpg",
+            "alt": "A QR-trail web page showing a painting of a fire and an Unlock Location button"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/elixir-answer.jpg",
+            "alt": "The final answer, ELIXIR, written on a sheet of paper"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2025/making-it.jpg",
+            "alt": "Making the props: a laptop, paper templates and envelopes on a desk"
+          }
+        ]
       },
       {
         "year": "2026",
-        "title": "On phones",
-        "text": "The same story, rebuilt fully digital."
+        "title": "On phones: The Burning Truth",
+        "text": "The same mystery, rebuilt as a hunt on the phone.",
+        "cover": "images/thumbs/portfolio/Treasure-Hunts/2026/title-screen.jpg",
+        "coverAlt": "The title screen of The Burning Truth, the 2026 phone hunt",
+        "layout": "phones",
+        "story": [
+          "A painting of an 1876 harbour fire, a letter hidden behind the canvas for 150 years, and a town secret about poisoned water. Teams sign in on their phones, follow a map of Scarborough and solve a puzzle at each real place: the library, the Grand Hotel, a seafront mural, St Martin-on-the-Hill.",
+          "Each solve restores a piece of the painting and earns an old ticket or letter, building to a final word. A live leaderboard keeps the teams racing."
+        ],
+        "images": [
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/title-screen.jpg",
+            "alt": "Title screen: The Burning Truth, with team sign-up"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/intro-letter.jpg",
+            "alt": "The opening letter about a painting of an 1876 harbour fire"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/map.jpg",
+            "alt": "The hunt map of Scarborough, part-way through"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/library-puzzle.jpg",
+            "alt": "Puzzle at Scarborough Library using an old newspaper article"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/mural-puzzle.jpg",
+            "alt": "Puzzle at the seafront mural"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/church-jigsaw.jpg",
+            "alt": "A stained-glass window jigsaw at St Martin-on-the-Hill"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/painting-restored.jpg",
+            "alt": "The painting, restored piece by piece"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/tramway-ticket.jpg",
+            "alt": "A reward: an old Scarborough tramway ticket"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/finale.jpg",
+            "alt": "The finale: building the last word from collected letters"
+          },
+          {
+            "src": "images/web/portfolio/Treasure-Hunts/2026/leaderboard.jpg",
+            "alt": "The live team leaderboard"
+          }
+        ]
       }
     ],
-    "mediaNote": "Photos coming soon."
+    "mediaNote": null
   },
   "experience": [
     {

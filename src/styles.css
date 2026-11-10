@@ -520,21 +520,69 @@ main > .section {
 }
 .hunt {
   display: grid;
+  align-content: start;
   gap: var(--s1);
-  padding: var(--s5);
+  width: 100%;
+  height: 100%;
+  padding: var(--s4) var(--s4) var(--s5);
+  cursor: pointer;
+  transition: transform 160ms ease;
 }
-.hunt:nth-child(1) {
+.hunt-list li:nth-child(1) .hunt {
   transform: rotate(-1deg);
 }
-.hunt:nth-child(2) {
+.hunt-list li:nth-child(2) .hunt {
   transform: rotate(1deg);
+}
+.hunt-list li .hunt:hover,
+.hunt-list li .hunt:focus-visible {
+  transform: rotate(0deg) translateY(-3px);
+}
+.hunt-cover {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: var(--s3);
+}
+/* Phone screenshots are tall: show the top of the screen */
+.hunt-cover.phones {
+  object-position: top center;
+  background: #1c1712;
 }
 .hunt-year {
   color: var(--toad);
   font-size: 1.5rem;
 }
-.hunt span:last-child {
+.hunt strong {
+  font-family: var(--serif);
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+  font-size: 1.3rem;
+}
+.hunt-text {
   color: var(--ink-2);
+}
+.hunt .story-more {
+  margin-top: var(--s2);
+}
+
+/* Captioned gallery pictures in the pop-ups */
+.story-images figure {
+  margin: 0;
+}
+.story-images figcaption {
+  margin-top: var(--s1);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+/* Tall phone screenshots sit three across */
+.story-images.phones {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.story-images.phones img {
+  border-radius: 14px;
 }
 
 /* The old shelf */
@@ -1000,6 +1048,13 @@ html.dialog-open {
   .story-images {
     grid-template-columns: 1fr;
   }
+  .story-images.phones {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hunt-cover {
+    aspect-ratio: 16 / 8;
+    margin-bottom: var(--s2);
+  }
 
   .footer-inner {
     grid-template-columns: auto 1fr;
@@ -1020,6 +1075,12 @@ html.dialog-open {
   .story-card:hover,
   .polaroid:hover {
     transform: rotate(var(--tilt, 0deg));
+  }
+  .hunt-list li:nth-child(1) .hunt:hover {
+    transform: rotate(-1deg);
+  }
+  .hunt-list li:nth-child(2) .hunt:hover {
+    transform: rotate(1deg);
   }
 }
 

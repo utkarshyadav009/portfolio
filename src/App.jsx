@@ -4,7 +4,7 @@ import Intro from "./components/Intro.jsx";
 import { StoryCard, StoryBody } from "./components/Story.jsx";
 import Featured from "./components/Featured.jsx";
 import { EarlierShelf, EarlierBody } from "./components/EarlierWork.jsx";
-import TreasureHunts from "./components/TreasureHunts.jsx";
+import TreasureHunts, { HuntBody } from "./components/TreasureHunts.jsx";
 import Timeline from "./components/Timeline.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
@@ -16,7 +16,7 @@ const TILTS = [-1.2, 0.8, 1.1, -0.7];
 export default function App() {
   const [site, setSite] = useState(null);
   const [error, setError] = useState(null);
-  // { kind: "story" | "earlier", project }
+  // { kind: "story" | "earlier" | "hunt", project }
   const [open, setOpen] = useState(null);
 
   useEffect(() => {
@@ -36,6 +36,7 @@ export default function App() {
   const bmo = site.selected.find((p) => p.chapter === "bmo");
   const openStory = (project) => setOpen({ kind: "story", project });
   const openEarlier = (project) => setOpen({ kind: "earlier", project });
+  const openHunt = (project) => setOpen({ kind: "hunt", project });
 
   return (
     <>
@@ -64,7 +65,7 @@ export default function App() {
         </Chapter>
 
         <Chapter id="hunts" n="four" title="Side quest: treasure hunts in Scarborough">
-          <TreasureHunts data={site.treasureHunts} />
+          <TreasureHunts data={site.treasureHunts} onOpen={openHunt} />
         </Chapter>
 
         <Chapter id="shelf" n="five" title="The old shelf" aside="2019 – 2025">
@@ -84,6 +85,7 @@ export default function App() {
       <Dialog open={!!open} onClose={() => setOpen(null)} labelledBy="dialog-title">
         {open?.kind === "story" && <StoryBody project={open.project} />}
         {open?.kind === "earlier" && <EarlierBody project={open.project} />}
+        {open?.kind === "hunt" && <HuntBody hunt={open.project} />}
       </Dialog>
     </>
   );
