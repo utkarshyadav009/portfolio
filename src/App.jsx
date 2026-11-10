@@ -70,6 +70,9 @@ export default function App() {
         <Chapter id="shelf" n="five" title="The old shelf" aside="2019 – 2025">
           <p className="section-lede">Games, graphics and early machine learning from my BSc and teaching.</p>
           <EarlierShelf projects={site.earlier} onOpen={openEarlier} />
+          <p className="hand swipe-hint" aria-hidden="true">
+            swipe for more →
+          </p>
         </Chapter>
 
         <Chapter id="skills" n="six" title="In the toolbox">

@@ -1,10 +1,10 @@
 export function EarlierShelf({ projects, onOpen }) {
   return (
-    <ul className="shelf">
+    <ul className="shelf" aria-label="Earlier projects">
       {projects.map((p, i) => (
         <li key={p.title} style={{ "--tilt": `${[-1.5, 1, -0.5, 1.5][i % 4]}deg` }}>
           <button type="button" className="polaroid" onClick={() => onOpen(p)}>
-            <img src={p.images[0]} alt="" loading="lazy" />
+            <img src={p.thumb || p.images[0]} alt="" loading="lazy" width="480" height="360" />
             <span className="polaroid-title">{p.title}</span>
             <span className="polaroid-year hand">{p.year}</span>
           </button>

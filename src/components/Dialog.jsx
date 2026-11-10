@@ -7,8 +7,13 @@ export default function Dialog({ open, onClose, labelledBy, children }) {
   useEffect(() => {
     const d = ref.current;
     if (!d) return;
-    if (open && !d.open) d.showModal();
+    if (open && !d.open) {
+      d.showModal();
+      d.scrollTop = 0;
+    }
     if (!open && d.open) d.close();
+    // Stop the page behind from scrolling while a story is open.
+    document.documentElement.classList.toggle("dialog-open", !!open);
   }, [open]);
 
   return (
@@ -20,12 +25,15 @@ export default function Dialog({ open, onClose, labelledBy, children }) {
       aria-labelledby={labelledBy}
     >
       {open && (
-        <div className="dialog-inner">
-          <button type="button" className="dialog-close" onClick={onClose}>
-            Close ✕
-          </button>
-          {children}
-        </div>
+        <>
+          {/* Sticky, so Close stays reachable on long stories */}
+          <div className="dialog-bar">
+            <button type="button" className="dialog-close" onClick={onClose}>
+              Close ✕
+            </button>
+          </div>
+          <div className="dialog-inner">{children}</div>
+        </>
       )}
     </dialog>
   );
