@@ -28,9 +28,10 @@ export function WobbleDefs() {
           <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" />
           <feDisplacementMap in="SourceGraphic" scale="2.2" />
         </filter>
+        {/* One octave of low-frequency noise: a slow hand-drawn bend, no pixel spikes */}
         <filter id="wobble-border" x="-5%" y="-5%" width="110%" height="110%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="3" />
-          <feDisplacementMap in="SourceGraphic" scale="3.5" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="1" seed="3" />
+          <feDisplacementMap in="SourceGraphic" scale="4" xChannelSelector="R" yChannelSelector="G" />
         </filter>
       </defs>
     </svg>

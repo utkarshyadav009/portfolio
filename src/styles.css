@@ -43,14 +43,14 @@
     --ink: #f1e8cf;
     --ink-2: #d9cfb4;
     --muted: #a99f86;
-    --line: #e9dfc2;
+    --line: #d6cba9;
     --moss: #6cc488;
     --moss-ink: #8fd6a4;
     --cookie: #e2b26a;
     --choc: #7a5130;
     --toad: #e0715a;
     --sky: #5f9e93;
-    --shadow: #070b08;
+    --shadow: #0d4a26; /* deep knit green: a black shadow vanishes on the night background */
     --rule: #2c3b30;
     color-scheme: dark;
   }
@@ -61,14 +61,14 @@
   --ink: #f1e8cf;
   --ink-2: #d9cfb4;
   --muted: #a99f86;
-  --line: #e9dfc2;
+  --line: #d6cba9;
   --moss: #6cc488;
   --moss-ink: #8fd6a4;
   --cookie: #e2b26a;
   --choc: #7a5130;
   --toad: #e0715a;
   --sky: #5f9e93;
-  --shadow: #070b08;
+  --shadow: #0d4a26; /* deep knit green: a black shadow vanishes on the night background */
   --rule: #2c3b30;
   color-scheme: dark;
 }

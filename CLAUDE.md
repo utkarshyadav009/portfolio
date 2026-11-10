@@ -28,7 +28,7 @@ Key fields in `site.json`:
 
 Images live under `public/images/` (project images in `public/images/portfolio/<Project-Name>/`); paths in JSON are relative to `public/`.
 
-Styling is one file, `src/styles.css`, driven by CSS custom properties on `:root`. Dark ("night") mode is defined twice on purpose: under `@media (prefers-color-scheme: dark)` guarded by `:root:not([data-theme="light"])`, and under `:root[data-theme="dark"]`. The header toggle sets `data-theme` on `<html>` and stores it in `localStorage`; an inline script in `index.html` applies the saved theme before first paint.
+Styling is one file, `src/styles.css`, driven by CSS custom properties on `:root`. Dark ("night") mode is defined twice on purpose: under `@media (prefers-color-scheme: dark)` guarded by `:root:not([data-theme="light"])`, and under `:root[data-theme="dark"]`. Day is the default: the inline script in `index.html` always sets `data-theme` before first paint (`light` unless the visitor saved `dark` with the header toggle, which stores the choice in `localStorage`), so the `prefers-color-scheme` block only matters if that script is removed. Night uses a deep green `--shadow`, because a black offset shadow disappears on the dark background.
 
 Doodles (`src/components/Doodles.jsx`) are original inline SVGs. Their colours come from CSS classes (`.ln` for outlines, `.f-<token>` for fills), because `var()` does not resolve inside SVG presentation attributes. The `#wobble` / `#wobble-border` SVG filters (rendered once by `WobbleDefs`) give the hand-drawn edge; `.card` applies it to a `::before` pseudo-element so text is never distorted.
 
