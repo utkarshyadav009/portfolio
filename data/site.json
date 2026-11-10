@@ -323,7 +323,8 @@
             "src": "images/web/portfolio/Treasure-Hunts/2025/making-it.jpg",
             "alt": "Making the props: a laptop, paper templates and envelopes on a desk"
           }
-        ]
+        ],
+        "org": "Anglotec Academy, Scarborough"
       },
       {
         "year": "2026",
@@ -377,7 +378,8 @@
             "src": "images/web/portfolio/Treasure-Hunts/2026/leaderboard.jpg",
             "alt": "The live team leaderboard"
           }
-        ]
+        ],
+        "org": "English in Scarborough"
       }
     ],
     "mediaNote": null
@@ -399,7 +401,12 @@
       "org": "Annie’s Café, Abertay University"
     },
     {
-      "dates": "2025, 2026",
+      "dates": "2026",
+      "role": "Team Leader",
+      "org": "English in Scarborough"
+    },
+    {
+      "dates": "2025",
       "role": "Team Leader",
       "org": "Anglotec Academy, Scarborough"
     },
