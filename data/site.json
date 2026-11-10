@@ -168,7 +168,7 @@
       "tagline": "A 3D world model that outputs relightable Gaussian splats",
       "year": "2026",
       "context": "CoSTAR, Abertay University",
-      "summary": "I was brought in to understand and maintain this pipeline, which chains several large generative models (including NVIDIA Lyra) to turn a prompt into a relightable 3D Gaussian splat scene. Within a week I had it running on a smaller server with four 48 GB GPUs by lazy-loading and offloading the models that are not needed at each stage (text encoders, camera-trajectory models) and quantising parts of it. When the original developer left I maintained it, and packaged it into Apptainer containers for deployment on the cluster.",
+      "summary": "Soran Labs was built by Soran Ghaderi. I was brought in to understand and maintain the pipeline, which chains several large generative models (including NVIDIA Lyra) to turn a prompt into a relightable 3D Gaussian splat scene. Within a week I had it running on a smaller server with four 48 GB GPUs by lazy-loading and offloading the models that are not needed at each stage (text encoders, camera-trajectory models) and quantising parts of it. When Soran left I maintained it, and packaged it into Apptainer containers for deployment on the cluster.",
       "results": [
         {
           "value": "1 week",
